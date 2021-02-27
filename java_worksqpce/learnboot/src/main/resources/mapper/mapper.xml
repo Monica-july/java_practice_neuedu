@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.learn.learnboot.dao.MyMapper">
+    <select id="queryAll" resultType="com.learn.learnboot.entity.User">
+        select t.uid,t.name,t.age from user t
+    </select>
+    <update id="updateUser">
+        update user t set t.name = #{name},t.age = #{age} where t.uid = #{uid}
+    </update>
+</mapper>

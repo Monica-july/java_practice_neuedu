@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<footer th:fragment="copy">
+    2019 The Good Thymes Virtual Grocery
+</footer>
+<div th:insert="fragment::copy">1</div>
+<div th:replace="fragment::copy">2</div>
+<div th:include="fragment::copy">3</div>
+</body>
+</html>
